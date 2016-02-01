@@ -2,6 +2,8 @@
 namespace App\Mvc;
 class Controller{
   public function index(){
-    echo 'Olá mundo!';
+    $model = new Model;
+    $view = new View;
+    $view->render($model->getText());
   }
 }
